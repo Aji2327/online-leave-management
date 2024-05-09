@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leave Application</title>
+<link rel="stylesheet" href="alstyle.css">
+</head>
+<body>
+<div class="container">
+    
+<h1>Leave Application</h1>
+<form id="leaveForm">
+    <label>Name :</label>
+    <input type="text" id="name" name="name" placeholder="@Example:Aji" required>
+    <label>Id :</label>
+    <input type="text" id="id" name="id" placeholder="@Example:1234" required>
+    <label>Type of Leave:</label>
+    <select id="leave_type" name="leave_type" required>
+        <option value="vacation">Vacation</option>
+        <option value="sick">Sick</option>
+        <option value="personal">Personal</option>
+        <option value="other">Other</option>
+    </select>
+<label for="startDate">Start Date:</label>
+<input type="date" id="startDate" name="startDate" required>
+<label for="endDate">End Date:</label>
+<input type="date" id="endDate" name="endDate" required>
+<label class="reason">Reason:</label>
+<textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
+<button class="btn" type="submit">Submit</button>
+</form>
+<div id="message"></div>
+</div>
+<script src="alscript.js"></script>
+</body>
+</html>
